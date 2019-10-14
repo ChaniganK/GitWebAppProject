@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EngToTh-Game</title>
+
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-firestore.js"></script>
+    <!-- bootstrap navbar -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">
+            <img src="xyz.jpg" alt="logo" style="width:40px;"> Tutor Folk &nbsp;&nbsp;
+        </a>
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">หน้าแรก</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">แนะนำคอร์ส</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">เกมส์ทายคำศัพท์</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="row">
+        <div class="col-3">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+                    aria-controls="v-pills-home" aria-selected="true">เกมส์ทายคำศัพท์ Eng -> Thai</a>
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                    aria-controls="v-pills-profile" aria-selected="false">เกมส์ทายคำศัพท์ Thai -> Eng</a>
+
+            </div>
+        </div>
+        <div class="col-9">
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                    aria-labelledby="v-pills-home-tab">
+                    <div class="container" id="eng2th">
+                        <div class="card">
+                            <div class="progress">
+                                <div class="progress-bar" style="width:60%">
+                                    <p>TIME LEFT: 0.00</p>
+                                </div>
+                            </div>
+                            <div>
+                                <section>
+                                    <p>HIGH SCORE: 00</p>
+                                    <p>SCORE: 00</p>
+                                </section>
+                                <aside>
+                                    <p>TIME LEFT: 0.00</p>
+                                </aside>
+                            </div>
+                            <div class="mainVocab">
+                                <p>vocab</p>
+                            </div>
+
+                            <button type="button" class="btn btn-info">Basic</button>
+                            <button type="button" class="btn btn-info">Basic</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <div class="container">
+                        <div class="card" id="th2eng">
+                            <div class="card-body">Basic card</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="./vocab_game.js"></script>
+
+</body>
+
+</html>

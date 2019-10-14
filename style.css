@@ -1,0 +1,48 @@
+body {
+    background-color: lightblue;
+    min-width: 670px;
+}
+
+.card {
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.btn {
+    /* margin: 5px; */
+    width: 45%;
+    margin: 5px auto;
+}
+
+/* all style */
+/* .card-body {
+    flex: 0;
+    padding: 1.25rem;
+    width: 150px;
+} */
+
+
+
+section {
+    float: left;
+    padding: 1.25rem;
+}
+
+aside {
+    text-align: right;
+    padding: 1.25rem;
+
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+.mainVocab {
+    text-align: center;
+    padding: 0.5srem;
+    padding-bottom: 1.2rem;
+    font-size: 2rem;
+}
