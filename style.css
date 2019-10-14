@@ -16,15 +16,6 @@ body {
     margin: 5px auto;
 }
 
-/* all style */
-/* .card-body {
-    flex: 0;
-    padding: 1.25rem;
-    width: 150px;
-} */
-
-
-
 section {
     float: left;
     padding: 1.25rem;
@@ -45,4 +36,5 @@ p {
     padding: 0.5srem;
     padding-bottom: 1.2rem;
     font-size: 2rem;
+    display: flex;
 }
